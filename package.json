@@ -37,6 +37,7 @@
   },
   "main": "index.js",
   "repository": "https://github.com/Anna-Kolycheva/ra-events-state-2.git",
+  "homepage": "https://Anna-Kolycheva.github.io/ra-events-state-2/",
   "author": "Kolycheva Anna <annakolyt@gmail.com>",
   "license": "MIT"
 }
