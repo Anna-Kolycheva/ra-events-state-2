@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import products from './products';
+import IconSwitch from './components/IconSwitch/IconSwitch'
+import CardsView from './components/CardsView/CardsView';
+import ListView from './components/ListView/ListView';
 
 function App() {
+  const [selected, setSelected] = useState('view_module');
+  const onSwitch = (icon) => {
+    icon = (icon === 'view_list' ? 'view_module' : 'view_list');
+    setSelected(() => icon);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <IconSwitch
+        icon={selected}
+        onSwitch={onSwitch}
+     />
+     {selected === 'view_list' ? 
+          <ListView products={products}/> :
+          <CardsView products={products}/>
+      }
     </div>
   );
 }

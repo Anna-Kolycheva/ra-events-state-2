@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 .App {
   text-align: center;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-logo {
