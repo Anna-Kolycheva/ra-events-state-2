@@ -41,7 +41,6 @@ p {
    font-size: 12px;
    margin-top: 5px;
    color: rgb(85, 85, 85);
-
 }
 
 .cardview-item-price {
@@ -61,10 +60,10 @@ p {
    font-weight: 600;
    text-transform: uppercase;
    color: #db5c4a;
-   cursor: pointer; 
+   cursor: pointer;
    z-index: 99;
    position: absolute;
    bottom: 12px;
    right: 10px;
-   white-space: nowrap
+   white-space: nowrap;
 }
